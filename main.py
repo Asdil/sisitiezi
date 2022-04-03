@@ -30,6 +30,7 @@ data = db.select_all(sql, (last_date, ))
 
 urls = []
 url_id = {}
+url_title = {}
 flag = 0
 for id, title, address, total, done in data:
     if total <= done:
@@ -43,10 +44,11 @@ else:
         url_list = [address for i in range(total - done)]
         urls.extend(url_list)
         url_id[address] = id
+        url_title[address] = title
 
     random.shuffle(urls)
 
-    times = 2
+    times = 3000
     quest = 0
     for url in tqdm(urls[:times]):
         try:
@@ -57,6 +59,7 @@ else:
         except:
             quest += 1
             print(f'出现问题{quest}次')
+            print(f'{url_title[url]}')
 
 print('运行结束')
 
