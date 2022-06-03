@@ -48,7 +48,7 @@ else:
 
     random.shuffle(urls)
 
-    times = 23000
+    times = 4000
     quest = 0
     for url in tqdm(urls[:times]):
         try:
