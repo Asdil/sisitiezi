@@ -22,7 +22,7 @@ def f(url):
     response = urllib.request.urlopen(request, timeout=2)
     html = response.read()  # .decode('GBK') # GBK utf-8“
     response.close()
-    time.sleep(random.uniform(0.1, 0.6))
+    time.sleep(random.uniform(1, 3))
 
 
 sql = "select id, title, address, total, done from work where the_date=? ;"

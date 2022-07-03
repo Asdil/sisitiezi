@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80e181ab-2c3a-44ec-ab89-26b5d1ebf0d1" name="Changes" comment="">
+    <list default="true" id="80e181ab-2c3a-44ec-ab89-26b5d1ebf0d1" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/558e4e18-6686-4a1d-aab7-dee7d97ec588.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/558e4e18-6686-4a1d-aab7-dee7d97ec588.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base.db" beforeDir="false" afterPath="$PROJECT_DIR$/base.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +23,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  }
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="sisitiezi" />
@@ -64,6 +71,11 @@
       <workItem from="1652672753067" duration="11000" />
       <workItem from="1653038807741" duration="606000" />
       <workItem from="1653183419705" duration="157000" />
+      <workItem from="1654863957091" duration="60000" />
+      <workItem from="1654940132044" duration="51000" />
+      <workItem from="1654951350826" duration="194000" />
+      <workItem from="1655124668929" duration="642000" />
+      <workItem from="1655606664061" duration="971000" />
     </task>
     <servers />
   </component>
