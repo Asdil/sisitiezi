@@ -31,7 +31,7 @@ data = db.select_all(sql, (last_date, ))
 urls = []
 url_id = {}
 url_title = {}
-flag = 0
+flag = 00
 for id, title, address, total, done in data:
     if total <= done:
         flag += 1
@@ -62,6 +62,9 @@ else:
             print(f'{url_title[url]}')
 
 print('运行结束')
+
+
+
 
 
 
