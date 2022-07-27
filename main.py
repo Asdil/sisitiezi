@@ -31,7 +31,7 @@ data = db.select_all(sql, (last_date, ))
 urls = []
 url_id = {}
 url_title = {}
-flag = 00
+flag = 0
 for id, title, address, total, done in data:
     if total <= done:
         flag += 1
@@ -48,7 +48,7 @@ else:
 
     random.shuffle(urls)
 
-    times = 4000
+    times = 2000
     quest = 0
     for url in tqdm(urls[:times]):
         try:
