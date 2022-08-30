@@ -51,12 +51,12 @@ else:
     times = 7000
     quest = 0
     for url in tqdm(urls[:times]):
-        try:
+        if True:
             f(url)
             id = url_id[url]
             sql = f'update work set done=done+1 where id = {id};'
             db.excute(sql)
-        except:
+        else:
             quest += 1
             print(f'出现问题{quest}次')
             print(f'{url_title[url]}')
