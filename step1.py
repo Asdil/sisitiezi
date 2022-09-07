@@ -22,9 +22,9 @@ with open('User_Agent', 'r') as f:
 
 
 ip_port = []
-for i in tqdm(range(20)):
-    url = f'https://free.kuaidaili.com/free/inha/{i}/'  # 免费ip地址
-    # url = f'https://free.kuaidaili.com/free/intr/{i}/'
+for i in tqdm(range(30)):
+    url = f'https://free.kuaidaili.com/free/inha/{i}/'  # 高匿名ip地址
+    # url = f'https://free.kuaidaili.com/free/intr/{i}/'  # 透明ip
     try:
         user_agent = random.choice(user_agents)
         headers = {'User-Agent': user_agent}
@@ -32,6 +32,7 @@ for i in tqdm(range(20)):
         response = urllib.request.urlopen(request, timeout=2)
         html = response.read().decode('utf-8')
     except:
+        print('失败')
         continue
     ips = []
     ports = []
