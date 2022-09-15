@@ -22,7 +22,7 @@ def f(url):
     response = urllib.request.urlopen(request, timeout=2)
     html = response.read()  # .decode('GBK') # GBK utf-8“
     response.close()
-    time.sleep(random.uniform(1, 3))
+    time.sleep(random.uniform(0, 0.5))
 
 
 sql = "select id, title, address, total, done from work where the_date=? ;"
@@ -48,7 +48,7 @@ else:
 
     random.shuffle(urls)
 
-    times = 7000
+    times = 100000
     quest = 0
     for url in tqdm(urls[:times]):
         try:
